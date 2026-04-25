@@ -1,0 +1,22 @@
+.dataviz {
+  background-color: var(--background);
+}
+
+.dataviz-header {
+  margin-bottom: 3rem;
+}
+
+.chart-container {
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    padding: 1rem;
+    overflow-x: auto;
+  }
+}

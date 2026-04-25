@@ -1,0 +1,100 @@
+.prediction-result {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.result-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.result-header h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.risk-low {
+  color: #10b981;
+}
+
+.risk-moderate {
+  color: #f59e0b;
+}
+
+.risk-high {
+  color: var(--secondary);
+}
+
+.gauge-container {
+  position: relative;
+  height: 24px;
+  background: var(--border);
+  border-radius: 12px;
+  margin: 2rem 0;
+  overflow: visible;
+}
+
+.gauge-fill {
+  height: 100%;
+  border-radius: 12px;
+  transition: width 1s ease-in-out;
+}
+
+.gauge-marker {
+  position: absolute;
+  top: -30px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gauge-value {
+  background: var(--text-main);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.gauge-marker::after {
+  content: '';
+  width: 2px;
+  height: 30px;
+  background: var(--text-main);
+  margin-top: 4px;
+}
+
+.result-details {
+  background: var(--background);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.result-details h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.disclaimer-text {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.result-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.reset-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
